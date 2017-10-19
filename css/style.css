@@ -1,0 +1,45 @@
+.hot-news {}
+
+.top-member {
+    text-align: center;
+}
+
+.top-member h1 {
+    text-align: left;
+}
+
+.logo-footer {
+    float: left;
+    margin-right: 50px;
+}
+
+.menu-footer {
+    float: left;
+    margin-top: 5px
+}
+
+.footer .menu-footer a {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 14px
+}
+
+.footer .copyright {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: right
+}
+
+.footer .copyright a {
+    padding: 0 5px;
+    display: inline-block
+}
+
+.footer .icon-footer {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500
+}
