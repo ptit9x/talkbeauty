@@ -21,6 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/jquery.rateyo.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -40,11 +41,11 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
                 <a class="navbar-brand" href="#">
                     <img alt="Cộng đồng review mỹ phẩm TalkBeauty" src="http://www.talkbeauty.vn/public/images/logo-talkbeauty.png" width="50" />
                 </a>
@@ -69,8 +70,29 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#" class="btn btn-post-text">Đăng bài</a></li>
-                    <li><a href="../navbar-static-top/"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-                    <li><a href="./"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                    <li class="dropdown dropdown-search">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form method="GET">
+                                    <input class="form-control" placeholder="Search">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hồ sơ</a></li>
+                            <li><a href="#">Thông báo</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Thoát</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -80,321 +102,266 @@
     <div class="main">
         <div class="container">
             <div class="row">
-              <div class="container-fluid">
-                <div class="banner-category" style="background-image: url('http://www.talkbeauty.vn/public/assets/Up 2_2017/chống_nắng.jpg')">
-                    <h1 class="title">Chống nắng</h1>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3">
-                  <div class="sidebar-posts">
-                    <div class="info-title">Xem nhiều nhất</div>
-                    <div class="panel">
-                      <div class="post">
-                          <div class="img img-no-spinner">
-                              <a href="http://www.talkbeauty.vn/review-kem-duong-da/kem-rau-ma-yoosun-tri-mun-tham-hieu-qua-khong-1454.html" class="lazy bg-cover" style="background-image: url(&quot;http://www.talkbeauty.vn/public/assets/user_dir/thuy-hoang-141/1.jpg-28.jpg&quot;); display: block;" data-original="http://www.talkbeauty.vn/public/assets/user_dir/thuy-hoang-141/1.jpg-28.jpg" tabindex="0"><img class="img-responsive" src="http://www.talkbeauty.vn/public/images/img-post-sample.png" alt="Kem rau má YooSun trị mụn thâm hiệu quả không?"></a>
-
-                          </div>
-                          <div class="content">
-                              <div class="title">
-                                  <a href="http://www.talkbeauty.vn/review-kem-duong-da/kem-rau-ma-yoosun-tri-mun-tham-hieu-qua-khong-1454.html" class="avatar" title="Kem rau má YooSun trị mụn thâm hiệu quả không?" tabindex="0">Kem rau má YooSun trị mụn thâm hiệu quả không?</a>
-                              </div>
-                              <div class="avatar-block avatar-block-sm clearfix">
-                                  <div class="name"><a href="http://www.talkbeauty.vn/thanh-vien-thuy-hoang-141.html" tabindex="0">Thùy Thy</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="post">
-                          <div class="img img-no-spinner">
-                              <a href="http://www.talkbeauty.vn/review-kem-duong-da/kem-rau-ma-yoosun-tri-mun-tham-hieu-qua-khong-1454.html" class="lazy bg-cover" style="background-image: url(&quot;http://www.talkbeauty.vn/public/assets/user_dir/thuy-hoang-141/1.jpg-28.jpg&quot;); display: block;" data-original="http://www.talkbeauty.vn/public/assets/user_dir/thuy-hoang-141/1.jpg-28.jpg" tabindex="0"><img class="img-responsive" src="http://www.talkbeauty.vn/public/images/img-post-sample.png" alt="Kem rau má YooSun trị mụn thâm hiệu quả không?"></a>
-
-                          </div>
-                          <div class="content">
-                              <div class="title">
-                                  <a href="http://www.talkbeauty.vn/review-kem-duong-da/kem-rau-ma-yoosun-tri-mun-tham-hieu-qua-khong-1454.html" class="avatar" title="Kem rau má YooSun trị mụn thâm hiệu quả không?" tabindex="0">Kem rau má YooSun trị mụn thâm hiệu quả không?</a>
-                              </div>
-                              <div class="avatar-block avatar-block-sm clearfix">
-                                  <div class="name"><a href="http://www.talkbeauty.vn/thanh-vien-thuy-hoang-141.html" tabindex="0">Thùy Thy</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                <div class="container-fluid">
+                    <div class="banner-category" style="background-image: url('http://www.talkbeauty.vn/public/assets/Up 2_2017/chống_nắng.jpg')">
+                        <h1 class="title">Chống nắng</h1>
+                        <div class="breadcrum" xmlns:v="http://rdf.data-vocabulary.org/#">
+                            <a href="#">Trang chủ > </a>
+                            <a href="#">Chăm sóc cơ thể > </a>
+                            <span>Collagen uống Neocell – Tiện lợi cho người bận rộn</span>
+                        </div>
                     </div>
-                  </div>
-
-                  <div class="sidebar-users">
-                    <div class="info-title">Thành viên nổi bật</div>
-                    <div class="list-popuplar-users">
-                      <div class="avatar-block avatar-block-sm clearfix">
-                        <a href="#" class="avatar ">
-                          <img src="http://www.talkbeauty.vn/wp-content/uploads/2016/04/yen.nguyen.jpg" alt="Yến Nguyễn" width="28" height="28">
-                        </a>
-                          <div class="name"><a href="http://www.talkbeauty.vn/thanh-vien-yen.nguyen.html">Yến Nguyễn</a>
-                          </div>
-                          <div class="info">Beauty Lover</div>
-                      </div>
-                      <div class="avatar-block avatar-block-sm clearfix">
-                        <a href="#" class="avatar ">
-                          <img src="http://www.talkbeauty.vn/wp-content/uploads/2016/04/yen.nguyen.jpg" alt="Yến Nguyễn" width="28" height="28">
-                        </a>
-                          <div class="name"><a href="http://www.talkbeauty.vn/thanh-vien-yen.nguyen.html">Yến Nguyễn</a>
-                          </div>
-                          <div class="info">Beauty Lover</div>
-                      </div>
-                    </div>
-                  </div>
-
-                <div class="sidebar-tag tag-cloud">
-
-
-            <a title="Tin tức" href="http://www.talkbeauty.vn/tin-tuc">Tin tức</a>
-                <a title="Talkbeauty chia sẻ cách lựa chọn các mỹ phẩm chăm sóc da tốt nhất, cách chăm sóc mọi loại da" href="http://www.talkbeauty.vn/my-pham-cham-soc-da">Chăm sóc da</a>
-                        <a title="Review các loại kem chống nắng rẻ, tốt nhất trên thị trường. Talkbeauty giúp bạn lựa chọn kem chống nắng phù hợp cho da mặt và toàn thân. Tham gia ngay!" href="http://www.talkbeauty.vn/review-kem-chong-nang">Chống nắng</a>
-                                <a title="TalkBeauty chia sẻ các bí quyết chăm sóc da mặt, cách dưỡng da mặt giúp bạn chọn được các sản phẩm, mỹ phẩm phù hợp với loại da của mình" href="http://www.talkbeauty.vn/my-pham-cham-soc-da-mat">Chăm sóc da mặt</a>
-                                <a title="Bạn đã biết cách chăm sóc da và loại mỹ phẩm dưỡng thể đang dùng có thật sự tốt? Chuyên trang review mỹ phẩm TalkBeauty giúp bạn tìm hiểu các loại mỹ phẩm dưỡng thể tốt trên thị trường." href="http://www.talkbeauty.vn/my-pham-duong-cham-soc-co-the">Chăm sóc cơ thể</a>
-                                <a title="TalkBeauty xin giới thiệu các phụ kiện mỹ phẩm phổ biến trên thị trường, giúp bạn chọn phụ kiện mỹ phẩm trang điểm phù hợp với túi tiền và nhu cầu." href="http://www.talkbeauty.vn/phu-kien-my-pham">Phụ kiện chăm sóc da</a>
-                        <a title="Mỹ phẩm trang điểm không chỉ giúp làm nổi bật khuôn mặt của bạn mà còn cần phải an toàn cho da mặt. TalkBeauty chia sẻ đến bạn những loại mỹ phẩm trang điểm tốt nhất cho làn da của bạn." href="http://www.talkbeauty.vn/my-pham-trang-diem">Trang điểm</a>
-                        <a title="Review các sản phẩm tẩy trang phổ biến như nước tẩy trang, dầu tẩy trang. TalkBeauty không những giúp bạn chọn sản phẩm tẩy trang tốt mà còn hướng dẫn tẩy trang đúng cách nhất." href="http://www.talkbeauty.vn/review-nuoc-dau-tay-trang">Tẩy trang</a>
-                                <a title="Sản phẩm trang điểm môi giúp bạn gái thêm phần tự tin. TalkBeauty sẽ chia sẻ các sản phẩm cùng các cách trang điểm môi để có một đôi môi đẹp, quyến rũ." href="http://www.talkbeauty.vn/review-san-pham-trang-diem-moi">Trang điểm môi</a>
-                                <a title="Trên thị trường có rất nhiều loại mỹ phẩm trang điểm mắt. TalkBeauty gợi ý cho bạn về bộ trang điểm mắt và hướng dẫn cách trang điểm mắt đẹp, tự nhiên." href="http://www.talkbeauty.vn/review-my-pham-trang-diem-mat">Trang điểm mắt</a>
-                    <a href="http://www.talkbeauty.vn/tags-danh-muc.html" class="more-tag">Xem thêm</a>
                 </div>
-              </div>
+
                 <div class="col-sm-12 col-md-9">
-                    <div class="post-container">
-                        <div class="container-fluid">
-                          <div class="filter-options">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 pull-right">
-                                    <select class="form-control input-sm" onchange="location = this.options[this.selectedIndex].value;">
-                                        <option value="http://www.talkbeauty.vn/my-pham-cham-soc-da?order=moi-nhat">
-                                            Mới nhất
-                                        </option>
-                                        <option value="http://www.talkbeauty.vn/my-pham-cham-soc-da?order=xem-nhieu-nhat">
-                                            Xem nhiều nhất
-                                        </option>
-                                        <option value="http://www.talkbeauty.vn/my-pham-cham-soc-da?order=yeu-thich-nhieu-nhat">
-                                            Yêu thích nhiều nhất
-                                        </option>
-                                        <option value="http://www.talkbeauty.vn/my-pham-cham-soc-da?order=binh-luan-nhieu-nhat">
-                                            Comment nhiều nhất
-                                        </option>
-                                    </select>
-                                </div>
+                    <div class="post-detail-container">
+                        <h1 class="title">Collagen uống Neocell – Tiện lợi cho người bận rộn</h1>
+                        <div class="post-info">
+                            <div class="first">
+                                <a href="#" title="Tahnee" class="avatar-sm">
+                                    <img src="http://www.talkbeauty.vn/public/assets/user_dir/tahnee-nguyen-374/14009886_1028295553950963_1424772841_njpg" width="30" height="30" />
+                                </a> |
+                                <a href="#">
+                                  Chăm sóc cơ thể
+                                </a> |
+                                <span>Đăng: 09/10/2017</span>
                             </div>
-                        </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="post thumbnail">
-                                        <a href="#">
-                                            <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
-                                        </a>
-                                        <div class="content">
-                                            <div class="avatar-block">
-                                                <a title="2776" href="#" class="avatar default">
-                                                    Q
-                                                </a>
-                                                <div class="name">
-                                                    <a href="http://www.talkbeauty.vn/thanh-vien-2776.html" title="QuinQuin">QuinQuin</a>
-                                                </div>
-                                                <div class="info">Beauty Lover</div>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#" class="avatar" title="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á">[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á</a>
-                                            </div>
-                                            <div class="info-search-bottom">
-                                                <div class="pull-left">
-                                                    <a href="javascript:;" rel="nofollow">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalLike" class="ng-binding">0</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="javascript:;" rel="nofollow" ng-click="showInfoModal(item.Id, 17)">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalReview" class="ng-binding">1</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="pull-right">
-                                                    <span>10 Lượt xem</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="post thumbnail">
-                                        <a href="#">
-                                            <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
-                                        </a>
-                                        <div class="content">
-                                            <div class="avatar-block">
-                                                <a title="2776" href="#" class="avatar default">
-                                                    Q
-                                                </a>
-                                                <div class="name">
-                                                    <a href="http://www.talkbeauty.vn/thanh-vien-2776.html" title="QuinQuin">QuinQuin</a>
-                                                </div>
-                                                <div class="info">Beauty Lover</div>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#" class="avatar" title="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á">[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á</a>
-                                            </div>
-                                            <div class="info-search-bottom">
-                                                <div class="pull-left">
-                                                    <a href="javascript:;" rel="nofollow">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalLike" class="ng-binding">0</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="javascript:;" rel="nofollow" ng-click="showInfoModal(item.Id, 17)">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalReview" class="ng-binding">1</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="pull-right">
-                                                    <span>10 Lượt xem</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="post thumbnail">
-                                        <a href="#">
-                                            <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
-                                        </a>
-                                        <div class="content">
-                                            <div class="avatar-block">
-                                                <a title="2776" href="#" class="avatar default">
-                                                    Q
-                                                </a>
-                                                <div class="name">
-                                                    <a href="http://www.talkbeauty.vn/thanh-vien-2776.html" title="QuinQuin">QuinQuin</a>
-                                                </div>
-                                                <div class="info">Beauty Lover</div>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#" class="avatar" title="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á">[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á</a>
-                                            </div>
-                                            <div class="info-search-bottom">
-                                                <div class="pull-left">
-                                                    <a href="javascript:;" rel="nofollow">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalLike" class="ng-binding">0</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="javascript:;" rel="nofollow" ng-click="showInfoModal(item.Id, 17)">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalReview" class="ng-binding">1</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="pull-right">
-                                                    <span>10 Lượt xem</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="post thumbnail">
-                                        <a href="#">
-                                            <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
-                                        </a>
-                                        <div class="content">
-                                            <div class="avatar-block">
-                                                <a title="2776" href="#" class="avatar default">
-                                                    Q
-                                                </a>
-                                                <div class="name">
-                                                    <a href="http://www.talkbeauty.vn/thanh-vien-2776.html" title="QuinQuin">QuinQuin</a>
-                                                </div>
-                                                <div class="info">Beauty Lover</div>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#" class="avatar" title="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á">[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á</a>
-                                            </div>
-                                            <div class="info-search-bottom">
-                                                <div class="pull-left">
-                                                    <a href="javascript:;" rel="nofollow">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalLike" class="ng-binding">0</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="javascript:;" rel="nofollow" ng-click="showInfoModal(item.Id, 17)">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalReview" class="ng-binding">1</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="pull-right">
-                                                    <span>10 Lượt xem</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="post thumbnail">
-                                        <a href="#">
-                                            <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
-                                        </a>
-                                        <div class="content">
-                                            <div class="avatar-block">
-                                                <a title="2776" href="#" class="avatar default">
-                                                    Q
-                                                </a>
-                                                <div class="name">
-                                                    <a href="http://www.talkbeauty.vn/thanh-vien-2776.html" title="QuinQuin">QuinQuin</a>
-                                                </div>
-                                                <div class="info">Beauty Lover</div>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#" class="avatar" title="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á">[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á aaaaaa</a>
-                                            </div>
-                                            <div class="info-search-bottom">
-                                                <div class="pull-left">
-                                                    <a href="javascript:;" rel="nofollow">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalLike" class="ng-binding">0</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="javascript:;" rel="nofollow" ng-click="showInfoModal(item.Id, 17)">
-                                                        <span>
-                                                          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                                        <span ng-bind="item.TotalReview" class="ng-binding">1</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="pull-right">
-                                                    <span>10 Lượt xem</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="more-posts">
-                        <input type="hidden" id="page" value="1">
-                        <a href="#" class="btn">xem nhiều hơn nữa</a>
+                            <div class="second">
+                                <div class="rateYo"></div>
+                                <div class="post-stat">
+                                    <a class="like" articleid="3040"><i class="fa fa-heart-o"></i> <span class="fb-like-3040">2</span></a>
+                                    <span class="comment"><i class="fa fa-comment-o"></i> <span class="fb-comment-3040">0</span></span>
+                                    <span class="view"><i class="fa fa-eye"></i> <span class="fb-view-3040">388</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            Collagen luôn là món Thực Phẩm Chức Năng được các chị em tìm kiếm hàng đầu hiện nay bởi vì công dụng quá tuyể vời của ẻm trong việc níu giữ nhan sắc và giúp da khoẻ mạnh. Tuy nhiên hầu hết các loại Collagen dạng viên đều phải dùng từ 4-6 viên một ngày,
+                            hơi bất tiện cho các bạn mới bắt đầu sử dụng thì hiện nay Collagen dạng nước cũng đang khá phổ biến và được sử dụng rộng rãi, cùng mình tìm hiểu dòng Neocell Collagen C dạng nước mình đang dùng nhé.
+                        </div>
+
+                        <div class="post-info">
+                            <div class="second">
+                                <div class="rateYo"></div>
+                                <div class="post-stat">
+                                    <a class="like" articleid="3040"><i class="fa fa-heart-o"></i> <span class="fb-like-3040">2</span></a>
+                                    <span class="comment"><i class="fa fa-comment-o"></i> <span class="fb-comment-3040">0</span></span>
+                                    <span class="view"><i class="fa fa-eye"></i> <span class="fb-view-3040">388</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-keywords">
+                            <label>từ khóa:</label>
+                            <a href="http://www.talkbeauty.vn/tag/review-my-pham-khong-troi">#mỹ phẩm không trôi</a>
+                            <a href="http://www.talkbeauty.vn/tag/review-waterproof-makeup"># waterproof makeup</a>
+                            <a href="http://www.talkbeauty.vn/tag/review-sweat-proof"># sweat proof</a>
+                            <a href="http://www.talkbeauty.vn/tag/review-mascara-chong-tham-nuoc"># mascara chống thấm nước</a>
+                            <a href="http://www.talkbeauty.vn/tag/review-eyeliner-chong-tham-nuoc"># eyeliner chống thấm nước</a>
+                        </div>
+
+                        <div class="comments">
+
+                        </div>
+
+                        <div class="sub-section-title">Review tương tự </div>
+                        <div class="list-posts">
+                            <div class="row">
+                                <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4">
+                                    <div class="post">
+                                        <div class="img img-no-spinner">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/Talk.Beauty/silispongejpg" class="img-responsive" alt="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/silisponge-mut-trang-diem-silicone-ban-da-thu-chua-1776.html" class="avatar" title="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4">
+                                    <div class="post">
+                                        <div class="img img-no-spinner">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/Talk.Beauty/silispongejpg" class="img-responsive" alt="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/silisponge-mut-trang-diem-silicone-ban-da-thu-chua-1776.html" class="avatar" title="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4">
+                                    <div class="post">
+                                        <div class="img img-no-spinner">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/Talk.Beauty/silispongejpg" class="img-responsive" alt="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/silisponge-mut-trang-diem-silicone-ban-da-thu-chua-1776.html" class="avatar" title="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-link">
+                            <div class="row">
+                                <ul>
+                                    <li><a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/bh-cosmetics-eco-luxe-co-trang-diem-gia-re-cho-nguoi-moi-bat-dau-2618.html" class="avatar" title="BH Cosmetics Eco Luxe cọ trang điểm giá rẻ cho người mới bắt đầu">BH Cosmetics Eco Luxe cọ trang điểm giá rẻ cho người mới bắt đầu</a></li>
+                                    <li><a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/hoi-dap-ve-bam-lo-tai-1870.html" class="avatar" title="Hỏi đáp về bấm lỗ tai">Hỏi đáp về bấm lỗ tai</a></li>
+                                    <li><a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/review-mieng-dan-mun-miacare-hut-mun-khong-gay-sung-tay-2915.html" class="avatar" title="[Review] Miếng dán mụn Miacare hút mụn không gây sưng tấy">[Review] Miếng dán mụn Miacare hút mụn không gây sưng tấy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sub-section-title">Xem thêm bài viết của Tahnee</div>
+                        <div class="list-posts list-same-user">
+                            <div class="row">
+                                <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4">
+                                    <div class="post">
+                                        <div class="img img-no-spinner">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/Talk.Beauty/silispongejpg" class="img-responsive" alt="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/silisponge-mut-trang-diem-silicone-ban-da-thu-chua-1776.html" class="avatar" title="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4">
+                                    <div class="post">
+                                        <div class="img img-no-spinner">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/Talk.Beauty/silispongejpg" class="img-responsive" alt="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/silisponge-mut-trang-diem-silicone-ban-da-thu-chua-1776.html" class="avatar" title="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4">
+                                    <div class="post">
+                                        <div class="img img-no-spinner">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/Talk.Beauty/silispongejpg" class="img-responsive" alt="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="http://www.talkbeauty.vn/review-phu-kien-trang-diem-make-up/silisponge-mut-trang-diem-silicone-ban-da-thu-chua-1776.html" class="avatar" title="SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?">SILISPONGE – Mút trang điểm silicone bạn đã thử chưa?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <div class="col-sm-12 col-md-3">
+                    <div class="home-sidebar">
+                        <div class="panel adv">
+                            <img src="images/adv.png" class="img-responsive" alt="Responsive image">
+                        </div>
+
+                        <div>
+                            <div class="avatar-block clearfix">
+                                <a href="#" class="avatar ">
+                                    <img class="img-circle" src="http://www.talkbeauty.vn/public/assets/user_dir/tahnee-nguyen-374/14009886_1028295553950963_1424772841_njpg" alt="Tahnee" width="64" height="64">
+                                </a>
+                                <div class="name">
+                                    <a href="#" title="Tahnee">Tahnee</a>
+                                </div>
+                                <div class="info">Beauty Lover</div>
+                            </div>
+                            <div class="info-block actions-block">
+                                <div>
+                                    <a href="http://www.talkbeauty.vn/follow-tahnee-nguyen-374.html?url=my-pham-trang-diem/ngai-gi-mua-gio-voi-tron-bo-make-up-chong-tham-nuoc-cuc-hat-de-2980.html" class="btn btn-primary full-width"><i class="fa fa-user-plus"></i>
+                                  Follow
+                                </a>
+                                </div>
+                                <div class="icons-social">
+                                    <a href="http://www.talkbeauty.vn/goi-tin-nhan-.html"><i class="fa fa-envelope"></i></a>
+                                    <a href="https://www.facebook.com/ao.hashue"><i class="fa fa-facebook"></i></a><a href="https://www.facebook.com/ao.hashue"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="stats-info">
+                                <ul>
+                                    <li><i class="fa fa-pencil-square-o"></i> Số bài viết <span class="number"><span class="totalView">59</span></span>
+                                    </li>
+                                    <li><i class="fa fa-eye"></i> Lượt xem <span class="number"><span class="totalView">63538</span></span>
+                                    </li>
+                                    <li><i class="fa fa-heart-o"></i> Lượt thích <span class="number"><span class="">244</span></span>
+                                    </li>
+                                    <li><i class="fa fa-user-plus"></i> Follower <span class="number">14</span></li>
+                                    <li><i class="fa fa-user-plus"></i> Following <span class="number">1</span></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="hashtag">
+                            	<div class="lbl"><span>Hashtag</span></div>
+                            	<div class="content">
+                            				<a href="http://www.talkbeauty.vn/tag/review-aritaum" style="color: #22acaa;">#Aritaum</a> ,
+                            				<a href="http://www.talkbeauty.vn/tag/review-gel-duong-am" style="color: #3db751;">#Gel dưỡng ẩm</a> ,
+                            				<a href="http://www.talkbeauty.vn/tag/review-kem-duong-am-cho-da-dau" style="color: #dc55e8;">#Kem dưỡng ẩm cho da dầu</a> ,
+                            				<a href="http://www.talkbeauty.vn/tag/review-son-tint" style="color: #7e533a;">#Son tint</a> ,
+                            				<a href="http://www.talkbeauty.vn/tag/review-sua-rua-mat-cho-da-nhon" style="color: #f05d5d;">#Sữa rửa mặt cho da nhờn</a>
+                            			</div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="talkbeauty-hint">
+                                <div class="lbl">
+                                    <a href="h#" style="color:#d10d32">TALKBeauty gợi ý</a></div>
+                                <div class="content">
+                                    <div class="item clearfix">
+                                        <div class="img">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/bao-ngan-3299/fragrances.jpg" class="img-responsive" alt="Bạn sẽ TIẾT KIỆM được một khoản tiền lớn khi hiểu được thuật ngữ này">
+                                            </a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="http://www.talkbeauty.vn/my-pham-cham-soc-da/ban-se-tiet-kiem-duoc-mot-khoan-tien-lon-khi-hieu-duoc-thuat-ngu-nay-3080.html" class="">Bạn sẽ TIẾT KIỆM được một khoản tiền lớn khi hiểu được thuật ngữ này</a>
+                                        </div>
+                                    </div>
+                                    <div class="item clearfix">
+                                        <div class="img">
+                                            <a href="#">
+                                                <img src="http://www.talkbeauty.vn/public/assets/user_dir/bao-ngan-3299/fragrances.jpg" class="img-responsive" alt="Bạn sẽ TIẾT KIỆM được một khoản tiền lớn khi hiểu được thuật ngữ này">
+                                            </a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="http://www.talkbeauty.vn/my-pham-cham-soc-da/ban-se-tiet-kiem-duoc-mot-khoan-tien-lon-khi-hieu-duoc-thuat-ngu-nay-3080.html" class="">Bạn sẽ TIẾT KIỆM được một khoản tiền lớn khi hiểu được thuật ngữ này</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item clearfix more-posts"><a href="http://www.talkbeauty.vn/goi-y-bai-viet-review-my-pham.html" class="btn btn-sm btn-grey">Xem nhiều gợi ý nữa</i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -450,6 +417,28 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script>
+        $(function() {
+            var rating = 3;
+            $(".rateYo").rateYo({
+                rating: rating,
+                numStars: 5,
+                precision: 2,
+                starWidth: "16px",
+                spacing: "5px",
+                ratedFill: "#d10d32",
+                onInit: function() {
+                    console.log("On Init");
+                },
+                onSet: function() {
+                    console.log("On Set");
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>

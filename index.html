@@ -69,8 +69,29 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#" class="btn btn-post-text">Đăng bài</a></li>
-                    <li><a href="../navbar-static-top/"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-                    <li><a href="./"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                    <li class="dropdown dropdown-search">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <form method="GET">
+                              <input class="form-control" placeholder="Search">
+                            </form>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-user">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Hồ sơ</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Thoát</a></li>
+                      </ul>
+                  </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -175,7 +196,7 @@
                             <!-- Example row of columns -->
                             <h1>BÀI VIẾT MỚI NHẤT</h1>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <div class="post thumbnail">
                                         <a href="#">
                                             <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
@@ -216,7 +237,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <div class="post thumbnail">
                                         <a href="#">
                                             <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
@@ -256,7 +277,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <div class="post thumbnail">
                                         <a href="#">
                                             <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
@@ -296,7 +317,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <div class="post thumbnail">
                                         <a href="#">
                                             <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
@@ -337,7 +358,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <div class="post thumbnail">
                                         <a href="#">
                                             <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
@@ -384,7 +405,7 @@
                             <!-- Example row of columns -->
                             <h1>POST YÊU THÍCH</h1>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <div class="post thumbnail">
                                         <a href="#">
                                             <img src="http://www.talkbeauty.vn/public/assets/user_dir/2776/rsz_3ce-velvet-lip-tint2.jpg" class="img-responsive" alt="[Review] 3CE Velvet Lip Tint - Cơn sốt mới trên toàn châu Á"></a>
@@ -474,23 +495,41 @@
                     <!-- Example row of columns -->
                     <h1>Top THANH VIEN</h1>
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-3 col-md-2">
                             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+                            <div class="name">
+        							         <a href="http://www.talkbeauty.vn/thanh-vien-Lilulu.html">Lilulu Lilulu</a>
+                						</div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-3 col-md-2">
                             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+                            <div class="name">
+        							         <a href="http://www.talkbeauty.vn/thanh-vien-Lilulu.html">Lilulu Lilulu</a>
+                						</div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-3 col-md-2">
                             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+                            <div class="name">
+        							         <a href="http://www.talkbeauty.vn/thanh-vien-Lilulu.html">Lilulu Lilulu</a>
+                						</div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-3 col-md-2">
                             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+                            <div class="name">
+        							         <a href="http://www.talkbeauty.vn/thanh-vien-Lilulu.html">Lilulu Lilulu</a>
+                						</div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-3 col-md-2">
                             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+                            <div class="name">
+        							         <a href="http://www.talkbeauty.vn/thanh-vien-Lilulu.html">Lilulu Lilulu</a>
+                						</div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-3 col-md-2">
                             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+                            <div class="name">
+        							         <a href="http://www.talkbeauty.vn/thanh-vien-Lilulu.html">Lilulu Lilulu</a>
+                						</div>
                         </div>
                     </div>
                 </div>
@@ -509,7 +548,7 @@
                         </div>
                         <div class="menu-footer">
                             <a href="http://www.talkbeauty.vn/gioi-thieu">Giới thiệu</a>
-                            <a href="http://www.talkbeauty.vn/tich-luy-diem">Tích lũy điểm</a>
+                            <a href="http://www.talkbeauty.vn/tich-luy-diem">Tích điểm</a>
                             <a href="http://www.talkbeauty.vn/hoi-dap">Hỏi đáp</a>
                             <a href="http://www.talkbeauty.vn/lien-he">Liên hệ</a>
                         </div>
