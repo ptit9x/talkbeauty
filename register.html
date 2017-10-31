@@ -33,7 +33,7 @@
                         <a href="#" title="TalkBeauty chi">
                             <img alt="TalkBeauty chia sẻ những bí quyết làm đẹp và đánh giá mỹ phẩm chân thực nhất, giúp bạn lựa chọn mỹ phẩm hợp da và nhiều kinh nghiệm sử dụng mỹ phẩm, làm đẹp hữu ích " src="http://www.talkbeauty.vn/public/images/logo-talkbeauty.png">
                         </a>
-                        <div class="section-title">Đăng nhập</div>
+                        <div class="section-title">Đăng kí</div>
                     </div>
                     <div class="panel-body">
                         <div class="col-xs-12 col-sm-6 line">
@@ -52,20 +52,59 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="password" class="col-md-12">Nhập lại mật khẩu <span class="required">*</span></label>
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary btn-login">Đăng nhập</button>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a class="btn-reset" href="http://localhost:8000/password/reset">
-                                        Bạn quên mật khẩu?
-                                      </a>
+                                        <input id="password" type="password" name="repassword" required="required" class="form-control">
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-12">Họ và tên <span class="required">*</span></label>
+                                    <div class="col-md-12">
+                                        <input id="password" type="password" name="name" required="required" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-12">Ngày sinh</label>
+                                    <div class="col-md-12">
+                                      <div class="input-group date" id="datetimepicker1">
+                                          <input type="text" name="birthday" id="birthday" class="form-control">
+                                          <span class="input-group-addon">
+                                              <span class="fa fa-calendar"></span>
+                                          </span>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-xs-12 col-sm-6">
+                                    <label>Điện thoại</label>
+                                    <input type="text" name="phone" class="col-xs-12 form-control" placeholder="0901234567">
+                                  </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                      <label>CMND</label>
+                                      <input type="text" name="cmnd" class="col-xs-12 form-control" placeholder="123456789">
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-md-12">
+                                  <div class="checkbox">
+                                      <label>
+                                          <input type="checkbox" name="acceptcheckbox"> Tôi đồng ý với
+                                      </label>
+                                      <a class="btn-reset" href="http://www.talkbeauty.vn/dieu-khoan-su-dung-page.html">Điều khoản sử
+                                      dụng của Talk Beauty</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary btn-login">Đăng kí</button>
+                                </div>
+                              </div>
                             </form>
                         </div>
 
                         <div class="col-xs-12 col-sm-6">
-                            <div class="row easy-login">
+                            <div class="row easy-login easy-register">
                                 <div class="col-md-12">
                                     <div class="sub-section-title">Đăng nhập đơn giản nhất</div>
                                 </div>
@@ -78,7 +117,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <a class="btn-register" href="http://www.talkbeauty.vn/dang-ky-tai-khoan.html">Đăng ký tài khoản</a>
+                                  <label>Bạn đã có tài khoản? </label>
+                                    <a class="btn-reset" href="http://www.talkbeauty.vn/dang-ky-tai-khoan.html">Đăng nhập</a>
                                 </div>
                             </div>
                         </div>

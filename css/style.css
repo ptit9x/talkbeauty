@@ -1,3 +1,6 @@
+body {
+  min-height: 900px;
+}
 body, a {
     font-size: 14px;
     color: #3a3a3a;
@@ -685,6 +688,93 @@ a:focus {
 .hashtag .content a {
     text-transform: uppercase;
 }
+body.sub-layout {
+    background: url(../images/bg-cosmetics.png) #dcf7f3;
+}
+.sub-layout-wrapper {
+    background: url(../images/bg-header.png) repeat-x;
+}
+.sub-layout .panel-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.sub-layout .panel-default>.panel-heading {
+  background-color: transparent;
+  border-color: transparent;
+}
+.sub-layout .section-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+.sub-layout .panel-body {
+  background-color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sub-layout .panel-body .line {
+  padding: 0 20px;
+  border-right: 1px solid #ddd;
+}
+.sub-layout .sub-section-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sub-layout .form-control {
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+.sub-layout .easy-login .form-group a {
+  width: 100%;
+  border-radius: 0;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.sub-layout .btn-facebook {
+    border: 1px solid #5c8aff;
+    background: #5c8aff;
+}
+.sub-layout .btn-google {
+    border: 1px solid #d94a4a;
+    background: #d94a4a;
+}
+.sub-layout .btn-login {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #dcf7f3;
+  background-color: #fff;
+  color: #e94c68;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.sub-layout .easy-login .btn-register {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.sub-footer {
+  text-align: center;
+}
+.sub-layout .easy-login .btn-register,
+.sub-footer .menu a,
+.sub-layout .btn-reset {
+  color: #2ebbb3;
+}
+.sub-footer,
+.sub-footer .menu a,
+.sub-footer .menu {
+  font-size: 12px;
+}
+.easy-register {
+  margin-top: 25%;
+}
+
 @media (max-width: 768px) {
   .hot-news .carousel-caption {
     padding-bottom: 5px;
@@ -730,6 +820,9 @@ a:focus {
   }
   .list-hot-news .item:last-child {
     display: none;
+  }
+  .sub-layout .panel-body .line {
+    border-right: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
